@@ -45,20 +45,4 @@ Para limpar arquivos compilados:
 make clean
 
 
-Exemplo de saída:
--------------------Sistema de Transações Bancárias-------------------
-Quantas transações deseja registrar: 2
 
-IDENTIFICADOR (5 números):  12345
-DATA (DD/MM/AA):  10/12/24
-HORA (XX:XX):  12:30
-TIPO (POUPANÇA/CORRENTE):  poupanca
-VALOR (R$):  27.70
-
------------------------------------------
-IDENTIFICADOR: 12345
-DATA: 10/12/24
-HORARIO: 12:30
-TIPO: poupanca
-VALOR: R$ 27.70
------------------------------------------
