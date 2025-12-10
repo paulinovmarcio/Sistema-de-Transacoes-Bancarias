@@ -1,0 +1,15 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "Executar no CMD Externo",
+            "type": "cppvsdbg",
+            "request": "launch",
+            "program": "${workspaceFolder}\\programa.exe",
+            "args": [],
+            "cwd": "${workspaceFolder}",
+            "externalConsole": true,
+            "preLaunchTask": "build-programa"
+        }
+    ]
+}

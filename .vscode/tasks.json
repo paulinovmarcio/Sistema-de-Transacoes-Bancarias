@@ -1,0 +1,66 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "RODAR PROGRAMA",
+            "type": "shell",
+            "command": "cmd",
+            "args": [
+                "/c",
+                "cd /d \"D:\\Baixar\\ListaEncadeada\" && gcc main.c transacao.c -o programa.exe && start \"Executando programa\" cmd /k \"programa.exe & pause\""
+            ],
+            "group": {
+                "kind": "none",
+                "isDefault": false
+            },
+            "presentation": {
+                "echo": true,
+                "reveal": "always",
+                "focus": false,
+                "panel": "shared"
+            }
+        },
+
+        {
+            "type": "cppbuild",
+            "label": "C/C++: gcc.exe build active file",
+            "command": "D:\\Baixar\\CodeBlocks\\MinGW\\bin\\gcc.exe",
+            "args": [
+                "-fdiagnostics-color=always",
+                "-g",
+                "main.c",
+                "transacao.c",
+                "-o",
+                "${fileDirname}\\programa.exe"
+            ],
+            "options": {
+                "cwd": "${fileDirname}"
+            },
+            "problemMatcher": [
+                "$gcc"
+            ],
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            }
+        },
+
+        {
+            "label": "build-programa",
+            "type": "shell",
+            "command": "gcc",
+            "args": [
+                "main.c",
+                "transacao.c",
+                "-o",
+                "programa.exe"
+            ],
+            "options": {
+                "cwd": "${workspaceFolder}"
+            },
+            "problemMatcher": [
+                "$gcc"
+            ]
+        }
+    ]
+}
